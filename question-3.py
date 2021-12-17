@@ -1,48 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[20]:
-
-
-import numpy as np
-
-
-# In[22]:
-
-
-h1 = 0 #initialy, setting h1 = 0, so that on initial value, the function's value may be calculated without Euler's Formula.
-# initializing variables acc to given initial value y(0)=1
-x_initial = 0
-y_initial = 1
-y_temp = 1
-x_temp = 0
-n = 0 # iterator 
-
-
-
-
-# a function that returns the value of y, at the last iteration, using Euler's Method
-def eulersCalculation():
-    for n in range(0, 10): 
-        y_final = y_temp + h1 * function(x_temp, y_temp)
-        x_temp += h1
-        y_temp = y_final
-        h1 = 0.1 #assigning value of h = 0.1 to it, for all the coming iterations
-        print(n + ": ")
-        print(y_final)
-        values += y_final
-    return y_final
-    
-# the following function simply returns y, because in this question we have y' = y
-def function(x, y):
-    return y;
-
-eulersCalculation()
-
-
-# In[13]:
-
-
 import numpy as np
 import pandas as pd
 import math
