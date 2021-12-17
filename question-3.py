@@ -71,14 +71,3 @@ plt.plot(arr[0],arr[1],'b--', label="y-exact ")
 plt.legend()
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
